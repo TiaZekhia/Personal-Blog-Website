@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog - Tia Zekhia's Personal Blog</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
+          <img src="images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class "sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about-page" class="nav-link">About Me</a>
+            </li>
+
+            <li>
+              <a href="#contact-page" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hi, I'm <b>Tia Zekhia</b>.
+            <br>Web Developer
+          </h1>
+
+          <p class="h3">
+            Specialized in <abbr title="Accessibility">a11y</abbr>
+            and Core Web Vitals
+          </p>
+
+          <div class="btn-group">
+            <a href="#contact-page" class="btn btn-primary">Contact Me</a>
+            <a href="#about-page" class="btn btn-secondary">About Me</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="images/hero.png" alt="Tia Zekhia" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="main">
+
+      <div class="container">
+
+        <!-- BLOG SECTION -->
+
+        <div class="blog">
+
+          <h2 class="h2">Latest Blog Post</h2>
+
+          <div class="blog-card-group">
+
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/blog-1.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Database</button>
+
+                <h3>
+                  <a href="#" class="h3">
+                    Building microservices with Dropwizard, MongoDB & Docker
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  This NoSQL database oriented to documents (by documents like JSON) combines some of the features from
+                  relational
+                  databases, easy to use and the multi-platform is the best option for scale up and have fault
+                  tolerance, load balancing,
+                  map reduce, etc.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/author.png" alt="Tia Zekhia" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tia Zekhia</a>
+
+                    <p class="text-sm">
+                      <time datetime="2022-01-17">Jan 17, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+
+                <div class="blog-card-banner">
+                  <img src="images/blog-10.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                    width="250" class="blog-banner-img">
+                </div>
+  
+                <div class="blog-content-wrapper">
+  
+                  <button class="blog-topic text-tiny">Database</button>
+  
+                  <h3>
+                    <a href="#" class="h3">
+                      Building React app
+                    </a>
+                  </h3>
+  
+                  <p class="blog-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+  
+                  <div class="wrapper-flex">
+  
+                    <div class="profile-wrapper">
+                      <img src="images/author.png" alt="Tia Zekhia" width="50">
+                    </div>
+  
+                    <div class="wrapper">
+                      <a href="#" class="h4">Tia Zekhia</a>
+  
+                      <p class="text-sm">
+                        <time datetime="2022-01-17">Jan 17, 2022</time>
+                        <span class="separator"></span>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <time datetime="PT3M">3 min</time>
+                      </p>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+
+            <!-- Add more blog posts with similar structure -->
+
+          </div>
+
+          <button class="btn load-more">Load More</button>
+
+        </div>
+
+        <!-- ASIDE -->
+
+        <div class="aside">
+
+          <div class="topics">
+
+            <h2 class="h2">Topics</h2>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="logo-octocat"></ion-icon>
+              </div>
+              <span>Database</span>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </div>
+              <span>Accessibility</span>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="globe-outline"></ion-icon>
+              </div>
+              <span>Web Performance</span>
+            </a>
+
+          </div>
+
+          <div class="newsletter">
+
+            <h2 class="h2">Newsletter</h2>
+
+            <p class="text-sm">Subscribe to our newsletter for the latest articles, news, and more.</p>
+
+            <form class="subscribe-form">
+              <input type="email" placeholder="Your Email">
+              <button class="btn subscribe-btn">Subscribe</button>
+            </form>
+
+          </div>
+
+          <div class="about-author">
+
+            <h2 class="h2">About the Author</h2>
+
+            <div class="author-img-box">
+              <img src="images/author.png" alt="Tia Zekhia" class="author-img">
+            </div>
+
+            <h3 class="h3">Tia Zekhia</h3>
+
+            <p class="text-sm">Web Developer and Accessibility Advocate</p>
+
+            <div class="author-social">
+              <a href="#" class="social-icon">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#" class="social-icon">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#" class="social-icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      
+    </div>
+    
+<div>
+    <!-- ABOUT ME PAGE -->
+    <div id="about-page">
+        <div class="container">
+          <h2 class="h2">About Me</h2>
+          <p>
+
+            "I'm Tia Zekhia, as a software engineer, I'm on a perpetual quest to turn ideas into elegant and efficient
+             software solutions. With a relentless curiosity and a deep love for problem-solving, 
+             I'm driven to create robust, user-friendly applications that make a real impact. 
+             My expertise spans a range of technologies, and I'm passionate about staying at the forefront of 
+             emerging trends in the ever-evolving tech landscape. From designing scalable architectures to debugging 
+             intricate code, I thrive in the world of coding. When I'm not immersed in lines of code, I enjoy sharing
+              my insights, collaborating with fellow engineers, and contributing to the growth of the tech community.
+               Join me on this journey through the digital realm, where innovation and creativity intersect to shape
+                the future of software engineering."
+        </p>
+          
+        </div>
+      </div>
+  
+      <!-- CONTACT PAGE -->
+      <div id="contact-page">
+        <div class="container">
+          <h2 class="h2">Contact</h2>
+          <!-- Add your "Contact" content here, including the contact form -->
+          <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+</div>
+    <!-- FOOTER -->
+
+    <footer>
+
+      <div class="container">
+
+        <div class="footer-content">
+
+          <div class="left">
+            <a href="#">
+              <img src="images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
+              <img src="images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
+            </a>
+
+            <p class="text-sm">
+              &copy; 2023 DevBlog. All rights reserved.
+            </p>
+
+          </div>
+
+          <div class="right">
+
+            <p class="text-sm">
+              Privacy Policy
+            </p>
+
+            <p class="text-sm">
+              Terms of Service
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>
